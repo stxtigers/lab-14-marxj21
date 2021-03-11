@@ -10,10 +10,7 @@ public class Main {
           test.add(1.6);
           test.add(6.69);
           ArrayList test2 = new ArrayList(10);
-          test2.add(1);
-          test2.add(2);
-          test2.add(2);
-          test2.add(2);
+         test2.add(5);
           ArrayList<String> test3 = new ArrayList(10);
            test3.add("to");
           test3.add("ats");
@@ -21,7 +18,10 @@ public class Main {
           test3.add("aaaaaa");
           test3.add("FOFL");
           swapPairs(test3);
+          removeDuplicates(test2);
+          System.out.print(test2);
           System.out.print(test3);
+          System.out.println(censor("FUCK",'U'));
       }
     public static double findLargest(ArrayList<Double>  a)
     {
@@ -202,6 +202,9 @@ public static void removeShorterStrings(ArrayList<String>  a)
 /*Note: There are a lot of conditions to meet in this one and your testing should involve several cases to make sure you meet all the requirements.
 
 Write a method removeShorterStrings that takes an ArrayList of Strings as a parameter and that removes from each successive pair of values the shorter string in the pair. For example, suppose that an ArrayList called list contains the following values: {"four", "score", "and", "seven", "years", "ago"} In the first pair, "four" and "score", the shorter string is "four". In the second pair, "and" and "seven", the shorter string is "and". In the third pair, "years" and "ago", the shorter string is "ago". Therefore, the call: removeShorterStrings(list); should remove these shorter strings, leaving the list as follows: "score", "seven", "years". If there is a tie (both strings have the same length), your method should remove the first string in the pair. If there is an odd number of strings in the list, the final value should be kept in the list*/
-
+public static String censor (String s, char c)
+{
+ return s.replace(c,'*');
     
+}
 }

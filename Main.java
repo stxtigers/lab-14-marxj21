@@ -21,7 +21,7 @@ public class Main {
           removeDuplicates(test2);
           System.out.print(test2);
           System.out.print(test3);
-          System.out.println(censor("FUCK",'U'));
+          System.out.println(censor("kkklkllloookkk",'k'));
       }
     public static double findLargest(ArrayList<Double>  a)
     {

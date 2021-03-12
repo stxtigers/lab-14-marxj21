@@ -184,7 +184,7 @@ public static void removeShorterStrings(ArrayList<String>  a)
     {
       break;
     }
-    System.out.println("a.get(i) = " + a.get(i));
+  
     if (a.get(i).length() <= a.get(i+1).length())
     {
       a.remove(i);
